@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+  </head>
+
+  <body class="font-Nunito_Regular">
+    <!-- Header -->
+    <header class="text-white">
+      <!-- Topbar -->
+      <div class="bg-[#131921] flex justify-between h-14 items-center">
+        <!-- logo -->
+        <a
+          href="./index.html"
+          class="cursor-pointer hover:border-[1px] px-2 block w-28"
+        >
+          <img
+            src="./assets/images/logo/navbarImg.png"
+            class="w-full h-full"
+            alt="logo"
+          />
+        </a>
+        <!-- location -->
+        <div
+          class="self-center cursor-pointer hover:border-[1px] md:px-2 hidden md:flex"
+        >
+          <img
+            src="assets/images/icons/locationIcon.png"
+            alt="location icon"
+            width="27"
+            height="27"
+            class="self-end"
+          />
+          <div
+            class="flex flex-col items-center justify-center overflow-hidden"
+          >
+            <span class="font-Nunito_ExtraLight text-[12px]">Deliver to</span>
+            <span
+              class="text-[14px] max-w-0-[60px] leading-[15px] font-[700] text-ellipsis"
+              >Iran</span
+            >
+          </div>
+        </div>
+        <!-- search -->
+        <div class="flex-grow self-stretch mx-4 relative z-50 w-64 lg:w-72">
+          <form
+            class="absolute rounded flex w-full h-[80%] top-1/2 -translate-y-1/2"
+          >
+            <div
+              class="relative flex items-center gap-2 bg-[#e6e6e6] px-[15px] cursor-pointer outline-orange-400 outline-[3px] rounded-l"
+              id="category-wrapper"
+            >
+              <div class="flex items-center gap-1">
+                <span
+                  class="text-black whitespace-nowrap"
+                  id="category-wrapper-text"
+                ></span>
+                <img
+                  src="./assets/images/icons/downBlack.png"
+                  alt="down icon"
+                  width="8"
+                  height="10"
+                />
+              </div>
+              <!-- Drop Down -->
+              <ul
+                class="absolute overflow-y-scroll text-black border-slate-400 w-[150px] border-[1px] hidden flex-col gap-1.5 top-[calc(100%+3px)] left-0 bg-white"
+              >
+                <li
+                  id="item"
+                  class="hover:bg-slate-400 border-300 border-b-[1px] p-[2px]"
+                >
+                  All
+                </li>
+                <li
+                  id="item"
+                  class="hover:bg-slate-400 border-300 border-b-[1px] p-[2px]"
+                >
+                  mobiles
+                </li>
+                <li
+                  id="item"
+                  class="hover:bg-slate-400 border-300 border-b-[1px] p-[2px]"
+                >
+                  laptops
+                </li>
+                <li
+                  id="item"
+                  class="hover:bg-slate-400 border-300 border-b-[1px] p-[2px]"
+                >
+                  mobile accessories
+                </li>
+              </ul>
+            </div>
+            <div class="w-full">
+              <input
+                type="text"
+                placeholder="Search for part of the title"
+                class="h-full text-black w-full px-5"
+                id="search-input"
+              />
+            </div>
+            <a
+              href="#"
+              class="bg-[#fdba74] rounded-r flex items-center justify-center px-[10px] cursor-pointer"
+              id="search-button"
+            >
+              <img src="./assets/images/icons/search.png" alt="search icon" />
+            </a>
+          </form>
+        </div>
+        <!-- language -->
+        <div
+          class="relative group md:flex hidden items-center gap-1 cursor-pointer hover:border-[1px] px-2"
+        >
+          <img
+            src="./assets/images/icons/united-states.png"
+            alt="united states flag"
+            width="25"
+            height="25"
+          />
+          <span>EN</span>
+          <img src="./assets/images/icons/downFill.png" alt="down icon" />
+          <!-- submenu -->
+          <div
+            class="absolute group-hover:block hidden border-[2px] border-[#efefef] w-72 top-full -right-[calc(8rem-2px)] z-10"
+          >
+            <div class="absolute top-[-10px] left-1/2 -translate-x-1/2"></div>
+            <div
+              class="bg-white rounded flex flex-col justify-center gap-1 p-2"
+            >
+              <div class="flex gap-[8px] items-center mb-4">
+                <p class="text-[13px] text-[#444]">Change language</p>
+                <a
+                  class="text-[#007185] text-[13px] hover:text-red-600 hover:underline"
+                  href="#"
+                >
+                  Learn more
+                </a>
+              </div>
+              <ul class="text-[14px] text-black flex flex-col gap-1">
+                <li class="flex gap-1">
+                  <input type="radio" name="language" value="en" checked />
+                  <p>English - EN</p>
+                </li>
+                <li class="flex gap-1">
+                  <input type="radio" name="language" value="es" />
+                  <p>español - ES</p>
+                </li>
+                <li class="flex gap-1">
+                  <input type="radio" name="language" value="ar" />
+                  <p>العربية - AR</p>
+                </li>
+                <li class="flex gap-1">
+                  <input type="radio" name="language" value="de" />
+                  <p>Deutsch - DE</p>
+                </li>
+                <li class="flex gap-1">
+                  <input type="radio" name="language" value="he" />
+                  <p>עברית - HE</p>
+                </li>
+                <li class="flex gap-1">
+                  <input type="radio" name="language" value="ko" />
+                  <p>한국어 - KO</p>
+                </li>
+                <li class="flex gap-1">
+                  <input type="radio" name="language" value="pt" />
+                  <p>português - PT</p>
+                </li>
+                <li class="flex gap-1">
+                  <input type="radio" name="language" value="zh" />
+                  <p>中文 (简体) - ZH</p>
+                </li>
+              </ul>
+              <hr class="border-slate-400 h-[1px]" />
+              <div class="flex gap-[8px] items-center">
+                <p class="text-[13px] text-[#444]">Change currency</p>
+                <a
+                  class="text-[#007185] text-[13px] hover:text-red-600 hover:underline"
+                  href="#"
+                  >Learn more</a
+                >
+              </div>
+              <div
+                class="flex justify-between items-cente text-[13px] text-black"
+              >
+                <p>$ - USD - US Dollar</p>
+                <a
+                  class="text-[#007185] text-[13px] hover:text-red-600 hover:underline"
+                  href="#"
+                  >Change</a
+                >
+              </div>
+              <hr class="border-slate-400 h-[1px]" />
+              <div class="flex items-center gap-5">
+                <img
+                  src="./assets/images/icons/united-states.png"
+                  alt="flag"
+                  width="25"
+                  height="25"
+                />
+                <p class="text-black">
+                  you are shopping on <br />
+                  Amazon.com
+                </p>
+              </div>
+              <a
+                class="text-center mt-1 text-[#007185] hover:underline"
+                href="#"
+                >Change country/region.</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- sign in -->
+        <div
+          class="relative group cursor-pointer hover:border-[1px] px-2 mx-2 hidden md:block text-sm"
+        >
+          <span class="text-[12px]">Hello, sign in</span>
+          <div class="flex gap-2 items-center">
+            <span class="text-[15px] font-bold">Account & Lists</span>
+            <img src="./assets/images/icons/downFill.png" alt="down icon" />
+          </div>
+          <!-- submenu -->
+          <div
+            class="absolute group-hover:block hidden top-full border-[2px] border-[#efefef] w-max -right-[80px] z-[51]"
+          >
+            <div class="top-[-10px] right-[80px]"></div>
+            <div
+              class="bg-white rounded flex flex-col justify-center gap-1 p-2 w-[500px]"
+            >
+              <button
+                class="text-black bg-[#FFD814] hover:bg-yellow-500 border-yellow-400 shadow self-center w-1/2 shadow-slate-400 border-[1px] rounded-full px-3 py-1"
+              >
+                Sign in
+              </button>
+              <div class="text-[11px] self-center flex gap-1">
+                <p class="text-black">New customer?</p>
+                <a class="text-[#007185] hover:underline" href="#"
+                  >Start here.</a
+                >
+              </div>
+              <hr class="border-slate-200 h-[1px]" />
+              <div class="p-1.5 flex justify-between">
+                <div
+                  class="border-r-slate-200 flex flex-col border-r-[1px] w-1/2 p-1"
+                >
+                  <a class="text-black font-[700] text-[16px]" href="#"
+                    >Your Lists</a
+                  >
+                  <a
+                    class="text-[#444] cursor-pointer text-[13px] hover:underline hover:text-[#e47911]"
+                    href="#"
+                    >Create a List</a
+                  >
+                  <a
+                    class="text-[#444] cursor-pointer text-[13px] hover:underline hover:text-[#e47911]"
+                    href="#"
+                    >Find a List or Registry</a
+                  >
+                </div>
+                <div class="text-black w-1/2 flex flex-col p-1">
+                  <a class="font-[700] text-[16px]" href="#">Your Account</a>
+                  <a
+                    class="text-[#444] cursor-pointer text-[13px] hover:underline hover:text-[#e47911]"
+                    href="#"
+                    >Account</a
+                  >
+                  <a
+                    class="text-[#444] cursor-pointer text-[13px] hover:underline hover:text-[#e47911]"
+                    href="#"
+                    >orders</a
+                  >
+                  <a
+                    class="text-[#444] cursor-pointer text-[13px] hover:underline hover:text-[#e47911]"
+                    href="#"
+                    >Recommendations</a
+                  >
+                  <a
+                    class="text-[#444] cursor-pointer text-[13px] hover:underline hover:text-[#e47911]"
+                    href="#"
+                    >Browsing</a
+                  >
+                  <a
+                    class="text-[#444] cursor-pointer text-[13px] hover:underline hover:text-[#e47911]"
+                    href="#"
+                    >History</a
+                  >
+                  <a
+                    class="text-[#444] cursor-pointer text-[13px] hover:underline hover:text-[#e47911]"
+                    href="#"
+                    >Watchlist</a
+                  >
+                  <a
+                    class="text-[#444] cursor-pointer text-[13px] hover:underline hover:text-[#e47911]"
+                    href="#"
+                    >Video</a
+                  >
+                  <a
+                    class="text-[#444] cursor-pointer text-[13px] hover:underline hover:text-[#e47911]"
+                    href="#"
+                    >Purchases &amp; Rentals</a
+                  >
+                  <a
+                    class="text-[#444] cursor-pointer text-[13px] hover:underline hover:text-[#e47911]"
+                    href="#"
+                    >Kindle Unlimited</a
+                  >
+                  <a
+                    class="text-[#444] cursor-pointer text-[13px] hover:underline hover:text-[#e47911]"
+                    href="#"
+                    >Subscribe &amp; Save Items</a
+                  >
+                  <a
+                    class="text-[#444] cursor-pointer text-[13px] hover:underline hover:text-[#e47911]"
+                    href="#"
+                    >Memberships &amp; Subscriptions</a
+                  >
+                  <a
+                    class="text-[#444] cursor-pointer text-[13px] hover:underline hover:text-[#e47911]"
+                    href="#"
+                    >Music Library</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- returns and orders -->
+        <div
+          class="md:flex md:flex-col md:justify-center hidden cursor-pointer hover:border-[1px] px-2"
+        >
+          <span class="text-[12px]">Returns</span>
+          <span class="text-[15px] font-bold">& Orders</span>
+        </div>
+        <!-- basket -->
+        <a
+          href="./basket.html"
+          class="flex items-end cursor-pointer hover:border-[1px] px-2 relative"
+        >
+          <div>
+            <span
+              class="absolute lg:left-9 left-7 text-orange-500 font-bold"
+              id="basket-number"
+              >0</span
+            >
+            <img
+              src="./assets/images/icons/basket.png"
+              alt="basket icon"
+              width="60"
+              height="60"
+              class="self-center"
+            />
+          </div>
+          <span class="text-[15px] font-bold self-end -ml-2">Cart</span>
+        </a>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="bg-primary flex h-9">
+        <ul class="flex ml-2 gap-1">
+          <li
+            class="hover:translate-y-[1px] cursor-pointer p-1.5 py-1 flex justify-center gap-1 items-center hover:border-[1px] hover:rounded-sm hover:border-white"
+            id="menu-icon"
+          >
+            <img
+              alt="icon menu"
+              width="20"
+              height="20"
+              src="./assets/images/icons/menu.png"
+            />
+            <button class="text-white text-[10px] md:text-sm font-bold">
+              All
+            </button>
+          </li>
+          <li
+            class="hover:translate-y-[1px] cursor-pointer p-1.5 py-1 flex justify-center items-center hover:border-[1px] hover:rounded-sm hover:border-white"
+          >
+            <p class="text-white text-[10px] md:text-sm font-semibold">
+              Today's Deals
+            </p>
+          </li>
+          <li
+            class="cursor-pointer hover:translate-y-[1px] p-1.5 py-1 flex justify-center items-center hover:border-[1px] hover:rounded-sm hover:border-white"
+          >
+            <p class="text-white text-[12px] md:text-sm font-semibold">
+              Customer Service
+            </p>
+          </li>
+          <li
+            class="cursor-pointer hover:translate-y-[1px] p-1.5 py-1 flex justify-center items-center hover:border-[1px] hover:rounded-sm hover:border-white"
+          >
+            <p class="text-white text-[12px] md:text-sm font-semibold">
+              Registry
+            </p>
+          </li>
+          <li
+            class="cursor-pointer hover:translate-y-[1px] p-1.5 py-1 flex justify-center items-center hover:border-[1px] hover:rounded-sm hover:border-white"
+          >
+            <p class="text-white text-[13px] md:text-sm font-semibold">
+              Gift Cards
+            </p>
+          </li>
+          <li
+            class="cursor-pointer hover:translate-y-[1px] p-1.5 py-1 flex justify-center items-center hover:border-[1px] hover:rounded-sm hover:border-white"
+          >
+            <p class="text-white text-[16px] md:text-sm font-semibold">Sell</p>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sidebar -->
+    <aside
+      class="fixed text-black inset-0 z-[53] transition duration-300 -translate-x-[100%] w-[365px] outline-none focus:outline-none bg-white"
+      id="side-bar"
+    >
+      <div>
+        <header
+          class="bg-[#232F3E] flex items-center pl-[30px] gap-[10px] p-[8px]"
+        >
+          <img
+            alt="Profile icon"
+            width="35"
+            height="35"
+            src="./assets/images/icons/profile.png"
+          />
+          <p class="text-white font-boldtext-lg">Hello, sign in</p>
+        </header>
+        <main class="overflow-scroll relative h-screen">
+          <!-- First level -->
+          <div>
+            <p class="font-boldtext-lg p-5 pb-1 pt-4">
+              Digital Content &amp; Devices
+            </p>
+            <ul>
+              <li
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+              >
+                Amazon Music
+                <img
+                  src="./assets/images/icons/rAarrow.webp"
+                  alt="arrow icon"
+                  width="25"
+                  height="25"
+                  class="group-hover:invert"
+                />
+              </li>
+              <li
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+              >
+                Kindle E -readers &amp; Books
+                <img
+                  src="./assets/images/icons/rAarrow.webp"
+                  alt="arrow icon"
+                  width="25"
+                  height="25"
+                  class="group-hover:invert"
+                />
+              </li>
+              <li
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+              >
+                Amazon Appstore
+                <img
+                  src="./assets/images/icons/rAarrow.webp"
+                  alt="arrow icon"
+                  width="25"
+                  height="25"
+                  class="group-hover:invert"
+                />
+              </li>
+            </ul>
+            <hr class="border-[1px]" />
+            <p class="font-boldtext-lg p-5 pb-1 pt-4">Shop by Department</p>
+            <ul>
+              <li
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+              >
+                Electronics
+                <img
+                  src="./assets/images/icons/rAarrow.webp"
+                  alt="arrow icon"
+                  width="25"
+                  height="25"
+                  class="group-hover:invert"
+                />
+              </li>
+              <li
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+              >
+                Computer
+                <img
+                  src="./assets/images/icons/rAarrow.webp"
+                  alt="arrow icon"
+                  width="25"
+                  height="25"
+                  class="group-hover:invert"
+                />
+              </li>
+              <li
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+              >
+                Smart Home
+                <img
+                  src="./assets/images/icons/rAarrow.webp"
+                  alt="arrow icon"
+                  width="25"
+                  height="25"
+                  class="group-hover:invert"
+                />
+              </li>
+              <li
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+              >
+                Arts &amp; Crafts
+                <img
+                  src="./assets/images/icons/rAarrow.webp"
+                  alt="arrow icon"
+                  width="25"
+                  height="25"
+                  class="group-hover:invert"
+                />
+              </li>
+              <li
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+              >
+                See all
+                <img
+                  src="./assets/images/icons/rAarrow.webp"
+                  alt="arrow icon"
+                  width="25"
+                  height="25"
+                  class="group-hover:invert"
+                />
+              </li>
+            </ul>
+            <hr class="border-[1px]" />
+            <p class="font-boldtext-lg p-5 pb-1 pt-4">
+              Programs &amp; Features
+            </p>
+            <ul>
+              <li
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+              >
+                Gift Cards
+                <img
+                  src="./assets/images/icons/rAarrow.webp"
+                  alt="arrow icon"
+                  width="25"
+                  height="25"
+                  class="group-hover:invert"
+                />
+              </li>
+              <li
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+              >
+                Shop By Interest
+                <img
+                  src="./assets/images/icons/rAarrow.webp"
+                  alt="arrow icon"
+                  width="25"
+                  height="25"
+                  class="group-hover:invert"
+                />
+              </li>
+              <li
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+              >
+                Amazon live
+                <img
+                  src="./assets/images/icons/rAarrow.webp"
+                  alt="arrow icon"
+                  width="25"
+                  height="25"
+                  class="group-hover:invert"
+                />
+              </li>
+              <li
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+              >
+                International Shopping
+                <img
+                  src="./assets/images/icons/rAarrow.webp"
+                  alt="arrow icon"
+                  width="25"
+                  height="25"
+                  class="group-hover:invert"
+                />
+              </li>
+              <li
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+              >
+                See all
+                <img
+                  src="./assets/images/icons/rAarrow.webp"
+                  alt="arrow icon"
+                  width="25"
+                  height="25"
+                  class="group-hover:invert"
+                />
+              </li>
+            </ul>
+            <hr class="border-[1px]" />
+            <p class="font-boldtext-lg p-5 pb-1 pt-4">Help &amp; Settings</p>
+            <ul class="pb-[50px]">
+              <li
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+              >
+                Your Account
+                <img
+                  src="./assets/images/icons/rAarrow.webp"
+                  alt="arrow icon"
+                  width="25"
+                  height="25"
+                  class="group-hover:invert"
+                />
+              </li>
+              <li
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+              >
+                <p class="flex gap-1">
+                  <img
+                    alt="arrow icon"
+                    width="25"
+                    height="25"
+                    class="group-hover:invert"
+                    src="./assets/images/icons/globe.png"
+                  />
+                  English
+                </p>
+                <img
+                  src="./assets/images/icons/rAarrow.webp"
+                  alt="arrow icon"
+                  width="25"
+                  height="25"
+                  lass="group-hover:invert"
+                />
+              </li>
+              <li
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+              >
+                <p class="flex gap-1">
+                  <img
+                    alt="usFlag"
+                    width="20"
+                    height="20"
+                    src="./assets/images/icons/united-states.png"
+                  />
+                  United States
+                </p>
+                <img
+                  src="./assets/images/icons/rAarrow.webp"
+                  alt="arrow icon"
+                  width="25"
+                  height="25"
+                  class="group-hover:invert"
+                />
+              </li>
+              <li
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+              >
+                Customer Service
+                <img
+                  src="./assets/images/icons/rAarrow.webp"
+                  alt="arrow icon"
+                  width="25"
+                  height="25"
+                  class="group-hover:invert"
+                />
+              </li>
+              <li
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+              >
+                Sign in
+                <img
+                  src="./assets/images/icons/rAarrow.webp"
+                  alt="arrow icon"
+                  width="25"
+                  height="25"
+                  class="group-hover:invert"
+                />
+              </li>
+            </ul>
+          </div>
+          <!-- Second Level -->
+          <div
+            class="w-full absolute h-full z-[55] bg-white top-0 transition-all duration-300 translate-x-[365px]"
+            id="second-menu"
+          >
+            <button
+              class="cursor-pointer mt-1 hover:bg-slate-200 py-[8px] px-5 w-full font-bold flex items-center gap-1 text-lg"
+              id="main-menu"
+            >
+              <img
+                alt="backArrow icon"
+                width="28"
+                height="28"
+                src="./assets/images/icons/backArrow.webp"
+              />
+
+              <p class="font-[600] text-[14px] leading-[16px]">Main Menu</p>
+            </button>
+            <hr class="border-[1px] border-slate-300" />
+            <p class="font-bold text-lg p-5 pb-1 pt-4">Stream Music</p>
+            <ul>
+              <a
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+                href="#"
+                >Amazon Music Unlimited
+              </a>
+              <a
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+                href="#"
+                >Free Streaming Music
+              </a>
+              <a
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+                href="#"
+                >Podcasts
+              </a>
+              <a
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+                href="#"
+                >Open Web Player
+              </a>
+              <a
+                class="cursor-pointer group flex justify-between items-center hover:bg-slate-200 py-2 px-5 text-sm"
+                href="#"
+                >Download the app
+              </a>
+            </ul>
+          </div>
+        </main>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <div class="p-[30px] bg-[#E3E6E6]">
+      <div
+        class="flex gap-3 flex-col md:flex-row md:items-start text-sm w-full p-1"
+      >
+        <div
+          class="bg-white rounded p-[30px] shadow-sm shadow-slate-400 text-xl w-full md:w-[80%]"
+        >
+          <header
+            class="p-1 flex flex-col md:items-start items-center text-center gap-1"
+          >
+            <p class="font-bold text-4xl">Shopping Basket</p>
+            <button class="text-[#007185] hover:text-red-600 deselected-btn">
+              Deselect all items
+            </button>
+          </header>
+          <hr class="border-slate-300 mt-1 h-[3px]" />
+          <div class="flex flex-col items-start mt-1">
+            <div class="w-full text-2xl item-container">
+              <!-- basket data will be loaded here -->
+            </div>
+            <div class="w-full">
+              <p class="text-right text-lg">
+                Subtotal (
+                <span class="font-semibold text-yellow-900 total-count">0</span>
+                item):
+                <span class="font-bold text-xl total-price">$0</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-white rounded self-start p-[20px] shadow-sm shadow-slate-40 w-full md:w-auto"
+        >
+          <div class="flex flex-col">
+            <p>
+              Subtotal (
+              <span class="font-semibold text-yellow-900 total-count">0</span>
+              item):
+            </p>
+            <p class="font-bold text-xl total-price">$0</p>
+          </div>
+          <div class="flex py-1 text-[14px] gap-1">
+            <input type="checkbox" />
+            <p>
+              This will be a gift
+              <a class="text-[#007185] hover:text-red-600" href="#"
+                >Learn more</a
+              >
+            </p>
+          </div>
+          <button
+            class="bg-[#FFD814] hover:bg-yellow-500 border-yellow-400 shadow shadow-slate-400 border-[1px] rounded-[5px] px-3 w-full mt-1 py-1.6"
+          >
+            Proceed to Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="flex flex-col text-slate-300">
+      <a
+        class="bg-[#232F3E]/90 hover:bg-[#232F3E]/80 text-center p-[14px] text-[12px] text-white"
+        href="#"
+      >
+        Back to top
+      </a>
+      <div
+        class="p-10 shrink-0 px-[90px] sm:[110px] md:px-[130px] lg:px-[160px] xl:px-[180px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-around flex-row bg-[#232F3E]"
+      >
+        <div>
+          <p class="text-white font-extrabold p-[2px]">Get to Know Us</p>
+          <ul class="flex flex-col">
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#">Careers</a>
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#">Blog</a>
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#">About Amazon</a>
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#">Investor Relations</a>
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#">Amazon Devices</a>
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#">Amazon Science</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-white font-extrabold p-[2px]">Make Money with Us</p>
+          <ul class="flex flex-col">
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#"
+                >Sell products on Amazon</a
+              >
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#"
+                >Sell on Amazon Business</a
+              >
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#"
+                >Sell apps on Amazon</a
+              >
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#"
+                >Become an Affiliate</a
+              >
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#"
+                >Advertise Your Products</a
+              >
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#"
+                >Self-Publish with Us</a
+              >
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#"
+                >Host an Amazon Hubs</a
+              >
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#"
+                >See More Make Money with Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-white font-extrabold p-[2px]">
+            Amazon Payment Products
+          </p>
+          <ul class="flex flex-col">
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#"
+                >Amazon Business Card</a
+              >
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#">Shop with Points</a>
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#"
+                >Reload Your Balance</a
+              >
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#"
+                >Amazon Currency Converter</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-white font-extrabold p-[2px]">Let Us Help You</p>
+          <ul class="flex flex-col">
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#"
+                >Amazon and COVID-19</a
+              >
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#">Your Account</a>
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#">Your Orders</a>
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#">
+                <span>Shipping Rates &amp;</span>Policies
+              </a>
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#">
+                <span>Returns &amp;</span>Replacements
+              </a>
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#"
+                >Manage Your Content and Devices</a
+              >
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#">Amazon Assistant</a>
+            </li>
+            <li class="p-[2px]">
+              <a class="hover:underline text-sm" href="#">Help</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-slate-500 h-[0.5px]" />
+      <div class="bg-[#232F3E] p-[10px]">
+        <div
+          class="flex items-center justify-center mx-auto max-w-[800px] flex-col md:flex-row"
+        >
+          <a
+            href="./index.html"
+            class="p-1 mr-[8px] -ml-[24px] sm:mr-[12px] md:mr-[14px] lg:mr-[16px] xl:mr-[20px]"
+          >
+            <img
+              src="./assets/images/logo/navbarImg.png"
+              alt="logo"
+              width="100"
+              height="100"
+            />
+          </a>
+          <div class="flex items-center justify-center gap-2">
+            <div
+              class="p-1.5 shrink-0 cursor-pointer flex items-center gap-1 border-slate-500 border-2 rounded justify-center"
+            >
+              <img
+                src="./assets/images/icons/globe.png"
+                alt="globe logo"
+                width="17"
+                height="17"
+              />
+              <p>English</p>
+            </div>
+            <div
+              class="p-1.5 shrink-0 cursor-pointer flex items-center gap-1 border-slate-500 border-2 rounded justify-center"
+            >
+              <p>
+                <span class="font-semibold text-white">$</span>
+                USD - U.s Dollor
+              </p>
+            </div>
+            <div
+              class="p-1.5 shrink-0 cursor-pointer flex items-center gap-1 border-slate-500 border-2 rounded justify-center"
+            >
+              <img
+                src="./assets/images/icons/united-states.png"
+                alt="globe logo"
+                width="17"
+                height="17"
+              />
+              <p>United States</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Top Layer -->
+    <div
+      class="absolute w-full h-screen top-0 left-0 bg-[#00000089] hidden"
+      id="top-layer"
+    ></div>
+
+    <script src="./assets/js/utilities.js" type="module"></script>
+    <script src="./assets/js/basket.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Nunito_ExtraLight";
+    src: url(./../fonts/Nunito/Nunito-ExtraLight.ttf);
+  }
+  @font-face {
+    font-family: "Nunito_Light";
+    src: url(./../fonts/Nunito/Nunito-Light.ttf);
+  }
+  @font-face {
+    font-family: "Nunito_Regular";
+    src: url(./../fonts/Nunito/Nunito-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Nunito_Medium";
+    src: url(./../fonts/Nunito/Nunito-Medium.ttf);
+  }
+  @font-face {
+    font-family: "Nunito_SemiBold";
+    src: url(./../fonts/Nunito/Nunito-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: "Nunito_Bold";
+    src: url(./../fonts/Nunito/Nunito-Bold.ttf);
+  }
+  @font-face {
+    font-family: "Nunito_ExtraBold";
+    src: url(./../fonts/Nunito/Nunito-ExtraBold.ttf);
+  }
+  @font-face {
+    font-family: "Nunito_Black";
+    src: url(./../fonts/Nunito/Nunito-Black.ttf);
+  }
+}
